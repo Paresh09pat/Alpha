@@ -1,7 +1,23 @@
-import React from 'react'
+
+import React, { useState } from 'react';
+import Axios from 'axios';
 import "./Style.css"
 
 function Form() {
+
+  const [firstName, setFirstName] = useState("")
+  const [lastName, setLastName] = useState("")
+  const [contact, setContact] = useState("")
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+
+    Axios.post('http://localhost:8000/insert', {
+      fName: firstName,
+      lName: lastName,
+      contactNo: contact
+    })
+  }
 
   const handleClick = () => {
     alert("Thank you for connting with us")
@@ -10,7 +26,7 @@ function Form() {
   return (
     <>
       <div id='mainformdiv'>
-        <form>
+        <form onSubmit={handleSubmit}>
           <h1>
             Connect with us
           </h1>
@@ -20,7 +36,7 @@ function Form() {
           <div id='formsub'>
             <div className='fdiv1'>
               <label className='lbl'>First Name</label> <br />
-              <input type='text' /><br /><br />
+              <input type='text' onChange={(e) => { setFirstName(e.target.value) }} /><br /><br />
               <label className='lbl'>Email</label><br />
               <input type='email' /><br /><br />
               <label className='lbl'>Company</label><br />
@@ -28,9 +44,9 @@ function Form() {
             </div>
             <div className='fdiv1'>
               <label className='lbl'>Last Name</label> <br />
-              <input type='text' /><br /><br />
+              <input type='text' onChange={(e) => { setLastName(e.target.value) }} /><br /><br />
               <label className='lbl'>Contact Number</label><br />
-              <input type='number' /><br /><br />
+              <input type='number' onChange={(e) => { setContact(e.target.value) }}/><br /><br />
               <label className='lbl'>State</label><br />
 
               <select name="state" id="state">
