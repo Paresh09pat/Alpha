@@ -12,7 +12,7 @@ function Third() {
         <div className='thirdsub1'></div>
 
         <div className='thirdsub2'>
-          <h1>Why us ?</h1>
+          <h1 className='whyus'>Why us ?</h1>
 
           <div className='thirdcir'>
             <div className="timgdiv"><img className='tci1' src={yespic} /></div>

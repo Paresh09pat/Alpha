@@ -41,7 +41,6 @@
 }
 
 .imgdiv {
-    border: 1px solid violet;
     width: 60px;
     height: 60px;
     border-radius: 50%;
@@ -100,15 +99,15 @@ li {
     border-radius: 5px;
 }
 
-.subbtn{
-background-color: #F26621;
-color: white;
-width: 200px;
-border: none;
-height: 30px;
-border-radius: 5px;
-margin-left: 20%;
-margin-top: 20px;
+.subbtn {
+    background-color: #F26621;
+    color: white;
+    width: 200px;
+    border: none;
+    height: 30px;
+    border-radius: 5px;
+    margin-left: 20%;
+    margin-top: 20px;
 }
 
 /* third */
@@ -131,34 +130,34 @@ margin-top: 20px;
     width: 65%;
     height: 700px;
     padding-left: 100px;
-    background-color: rgb(249, 241, 241);
+    background-color: rgb(231, 225, 225);
 }
 
-.thirdcir{
+.thirdcir {
     height: 100px;
     display: flex;
     margin-bottom: 30px;
 }
 
-.timgdiv{
+.timgdiv {
     width: 80px;
-    height: 100px;  
+    height: 100px;
     border-radius: 50%;
     background-color: white;
 }
 
-.tci1{
-   width: 45px;
-   margin-left: 18px;
-   margin-top: 18px;
+.tci1 {
+    width: 45px;
+    margin-left: 18px;
+    margin-top: 18px;
 }
 
-.ttextdiv{
+.ttextdiv {
     margin-left: 30px;
     width: 85%;
 }
 
-.reqbtn{
+.reqbtn {
     background-color: #F26621;
     color: white;
     border: none;
@@ -169,7 +168,7 @@ margin-top: 20px;
     margin-top: 20px;
 }
 
-#mainfootdiv{
+#mainfootdiv {
     width: 90%;
     margin-left: 5%;
     height: 150px;
@@ -179,10 +178,10 @@ margin-top: 20px;
     font-family: sans-serif;
 }
 
-.footdiv1{
+.footdiv1 {
     width: 25%;
     height: 150px;
-     padding-left: 40px;
+    padding-left: 40px;
 }
 
 
@@ -206,7 +205,7 @@ margin-top: 20px;
     box-sizing: border-box;
 }
 
-#formsub{
+#formsub {
     width: 100%;
     height: 190px;
     display: flex;
@@ -214,19 +213,323 @@ margin-top: 20px;
     margin-top: 20px;
 }
 
-.fdiv1{
+.fdiv1 {
     width: 47.5%;
     height: 190px;
     box-sizing: border-box;
 }
 
-input,textarea{
+input,
+textarea,
+select {
     width: 90%;
     height: 18px;
     margin-top: 10px;
     border: 1px solid black;
     border-radius: 3px;
 }
-input:hover{
-   border: 1px solid red;
+
+input:hover {
+    border: 1px solid red;
+}
+
+textarea:hover {
+    border: 1px solid red;
+}
+
+select:hover {
+    border: 1px solid red;
+}
+
+select {
+    height: 21px;
+}
+
+
+/* Media query */
+
+@media screen and (max-width: 391px) {
+    #firstmain {}
+
+    .logoimage {
+        width: 100px;
+        margin-left: 20px;
+    }
+
+    .headtext {
+        margin-left: 20px;
+        margin-top: 40px;
+        font-weight: 600;
+        font-size: 22px;
+    }
+
+    .textnormal {
+        margin-left: 20px;
+        font-size: 10px;
+        margin-top: 0px;
+    }
+
+    #firstmain {
+        width: 100%;
+        margin-left: 0%;
+        height: 700px;
+        background: transparent url('Images/cutcar.png') 0% 0% no-repeat padding-box;
+        background-size: contain;
+        background-position-y: bottom;
+        border: 1px solid gray;
+    }
+
+    .textnormal {
+        margin-left: 20px;
+        font-family: sans-serif;
+        font-size: 15px;
+        margin-top: 20px;
+    }
+
+    #imgmaindiv {
+        width: 100%;
+        margin-left: -20px;
+        height: 150px;
+        margin-top: 0px;
+        display: flex;
+    }
+
+    .imgdiv {
+        width: 35px;
+        height: 35px;
+        border-radius: 50%;
+        margin-left: 20x;
+        background-color: black;
+    }
+
+    .cirimgdiv {
+        width: 23%;
+        height: 150px;
+    }
+
+    .yesimg {
+        width: 20px;
+        margin-left: 8px;
+        margin-top: 5px;
+    }
+
+    .imdtext {
+        font-size: 10px;
+        margin-left: 45px;
+    }
+
+    /* form */
+
+    #mainformdiv {
+        border: 1px solid red;
+        width: 80%;
+        margin-left: 10%;
+        position: absolute;
+        top: 430px;
+        left: 0px;
+        border-radius: 10px;
+        height: 750px;
+    }
+
+    #formsub {
+        width: 100%;
+        height: 350px;
+        display: block;
+        box-sizing: border-box;
+        margin-top: 10px;
+    }
+
+    .fdiv1 {
+        width: 100%;
+        height: 190px;
+        box-sizing: border-box;
+    }
+
+    input,
+    textarea,
+    select {
+        width: 90%;
+        height: 15px;
+        margin-top: 5px;
+    }
+
+    select {
+        height: 21px;
+    }
+
+    .cbox {
+        font-size: 11px;
+    }
+
+    .subbtn {
+        width: 150px;
+        height: 25px;
+        border-radius: 5px;
+        margin-left: 20%;
+        margin-top: 0px;
+    }
+
+    /* Second */
+    #secondmain {
+        width: 100%;
+        margin-left: 0%;
+        height: 750px;
+        background: transparent url('Images/rootcar-cut.png') 0% 0% no-repeat padding-box;
+        background-size: contain;
+        background-position-y: bottom;
+        padding-top: 400px;
+    }
+
+    .sechead {
+        margin-left: 20px;
+        margin-top: 120px;
+        font-size: x-large;
+    }
+
+    .sectext,
+    .headfeature {
+        margin-left: 20px;
+        font-size: 14px;
+    }
+
+    ul {
+        margin-left: -10px;
+        font-size: 10px;
+    }
+
+    li {
+        margin-bottom: 15px;
+    }
+
+    .secbtn {
+        margin-left: 100px;
+        width: 200px;
+        height: 35px;
+        background-color: #F26621;
+        color: white;
+        border: none;
+        border-radius: 5px;
+    }
+
+
+    /* third */
+    #thirdmain {
+        width: 100%;
+        margin-left: 0%;
+        height: 1040px;
+        display: block;
+   box-sizing: border-box;
+    }
+
+    .thirdsub1 {
+        width: 96%;
+        height: 290px;
+        background: transparent url('Images/mediabanana.png') 0% 0% no-repeat padding-box;
+        background-size: contain;
+        position: absolute;
+        top: 2610px;
+    }
+
+    .thirdsub2 {
+        width: 100%;
+        height: 750px;
+        padding-left: 20px;
+        padding-top: 5px;
+        box-sizing: border-box;
+    }
+
+    .whyus {
+        font-size: 25px;
+    }
+
+    .thirdcir {
+        height: 120px;
+        display: block;
+        margin-bottom: 30px;
+    }
+
+    .timgdiv {
+        width: 40px;
+        height: 50px;
+    }
+
+    .tci1 {
+        width: 25px;
+        margin-left: 8px;
+        margin-top: 8px;
+    }
+
+    .ttextdiv {
+        margin-left: 5px;
+        width: 95%;
+        font-size: 13px;
+    }
+
+    .reqbtn {
+        width: 200px;
+        height: 35px;
+        border-radius: 5px;
+        font-size: 15px;
+        margin-top: 0px;
+    }
+
+    /* footer */
+
+    #mainfootdiv {
+        width: 100%;
+        margin-left: 0%;
+        height: 250px;
+        display: block;
+        box-sizing: border-box;
+        border: 1px solid blue;
+    }
+
+    .footdiv1 {
+        width: 50%;
+        height: 150px;
+        padding-left: 10px;
+        padding-top: 5px;
+        box-sizing: border-box;
+        font-size: 13px;
+
+    }
+
+    .best {
+        display: none;
+    }
+
+    .footlogo {
+        width: 130px;
+    }
+
+    .A {
+        position: absolute;
+        top: 3050px;
+        box-sizing: border-box;
+        height: 70px;
+    }
+
+    .AA {
+        position: absolute;
+        top: 2900px;
+        box-sizing: border-box;
+
+    }
+
+    .AAA {
+        position: absolute;
+        top: 2900px;
+        box-sizing: border-box;
+        left: 200px;
+        font-size: 10px;
+    }
+
+    .AAAA {
+        position: absolute;
+        top: 3025px;
+        box-sizing: border-box;
+        left: 200px;
+        height: 100px;
+    }
+
 }
